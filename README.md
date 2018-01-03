@@ -6,7 +6,3 @@ Read me for my website
 
 Posting my thoughts online
 
-### How do I get set up? ###
-
-Install and run jekyll serve.
-
