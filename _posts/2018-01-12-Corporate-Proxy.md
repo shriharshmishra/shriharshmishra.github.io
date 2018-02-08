@@ -82,4 +82,4 @@ So these are the corporate proxy battles that I have fought and won some how. A 
 [build-arg reference]: https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables-build-arg
 [v-proxy-conf]: http://tmatilai.github.io/vagrant-proxyconf/ 
 [Ruby Gems]: https://rubygems.org/gems/vagrant-proxyconf/versions/1.5.2
-<a name="info-war">1</a>: In the knowledge warfare, ammunition(information) increase as we fight more! 
+<a name="info-war">1</a>: In the knowledge warfare, ammunition (i.e. information) increases as one ventures further! 

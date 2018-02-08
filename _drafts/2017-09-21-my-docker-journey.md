@@ -45,7 +45,7 @@ First step was to assign docker as a provisioner in the Vagrantfile.
 
     But my problem wasn't solved as our corporate proxy allowed internet connection but blocked anonymous downloads. Jenkins was trying to download the Apache Ant zip file and proxy denied the permission to download it. 
 
-    So finally the way forward for me is to extend the official Jenkins image and load it with necessary plugins and software.  
+    So finally the way forward for me is to extend the official Jenkins image and load it with necessary plugins and software. (this solution worked!, read entry on 20-10-2017) 
 
 
 #### 20-10-2017
@@ -54,3 +54,11 @@ First step was to assign docker as a provisioner in the Vagrantfile.
 - Success Finally! Most of my last hurdles were due to project-specific environment setup such as host file entries, build tool installation, and problem around using Jenkins automatic installations over proxy etc.
 - I found that I will have to install the Ant manually on the Jenkins image. For now I ssh'd to the container and installed Ant using apt-get. Final solution would be to extend the base Jenkins image and perform these settings via Dockerfile. 
 - Overall I was happy to see the my Jenkins container was up and running builds successfully!
+
+### Summary
+
+- Setup the vagrant box to run linux. 
+- Install vagrant-proxy-conf plugin which helps with proxy settings on the guest OS. 
+- Use docker provisioning to install required docker images. In my case, jenkins images. This is optional as it is equally easy to pull new images once you get into the box. 
+- Extend the Jenkins images to create one which has all the required software to execute build jobs for my project. (Ant, Ivy, ssh private keys to ivy repo etc.). 
+- 
