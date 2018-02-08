@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Today I Learned: A simple trick to slim down a Docker image"
-date:   2018-01-18 10:38:42 +0000
+date:   2018-02-08 10:38:42 +0000
 categories: docker
 tags: docker, ubuntu, tips, tricks 
 ---
