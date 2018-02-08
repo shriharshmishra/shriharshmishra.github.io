@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Behind the Coporate Proxy"
+title:  "Behind the Corporate Proxy"
 description: 
 date:   2018-01-12 12:38:42 +0000
 categories: shell proxy  
