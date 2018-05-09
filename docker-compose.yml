@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+    jekyll:
+        image: bretfisher/jekyll-serve
+        volumes:
+            - .:/site
+        environment: 
+            - https_proxy
+            - http_proxy
+            - no_proxy
+        ports:
+            - '5020:4000'
+        command: [ "bundle", "exec", "jekyll", "serve", "--force_polling", "-H", "0.0.0.0", "-P", "4000", "--drafts" ]
